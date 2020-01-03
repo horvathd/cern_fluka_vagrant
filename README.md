@@ -96,10 +96,11 @@ Run the *setup_vagrant_ubuntu-18.04.sh* script available at `/fluka` in the virt
 The script will install the necessary packages, configure *gfortran 8*, and install Flair. After the installation
 finished, restart *Ubuntu*.
 
-### 3.2. Installing FLUKA
+### 3.2. Downloading and installing FLUKA
 
-You can follow the installation steps for GNU/Linux to install the *gfor9.tgz* package of FLUKA, on
-[fluka.cern](https://fluka.cern/documentation/installation/fluka-linux-macos)
+Download the GNU/Linux *\*gfor9.tgz* package of FLUKA from [fluka.cern](https://fluka.cern/download/latest-fluka-release).
+
+The steps of the installation can be found [here](https://fluka.cern/documentation/installation/fluka-linux-macos).
 
 ### 3.3. Running FLUKA and Flair
 
