@@ -46,6 +46,12 @@ if [ ! "$?" -eq 0 ]; then
     exit 1
 fi
 
+# Set gfortran-8 as default
+echo "Setting up gfortran-8 as default compiler"
+update-alternatives --quiet --remove-all gfortran
+update-alternatives --quiet --install /usr/bin/gfortran gfortran /usr/bin/gfortran-7 10
+update-alternatives --quiet --install /usr/bin/gfortran gfortran /usr/bin/gfortran-8 20
+
 echo "Installing Flair"
 apt-get install -y -qq flair
 if [ ! "$?" -eq 0 ]; then
@@ -53,25 +59,13 @@ if [ ! "$?" -eq 0 ]; then
     exit 1
 fi
 
-# Set gfortran-8 as default
-echo "Setting up gfortran-8 as default compiler"
-update-alternatives --quiet --remove-all gfortran
-update-alternatives --quiet --install /usr/bin/gfortran gfortran /usr/bin/gfortran-7 10
-update-alternatives --quiet --install /usr/bin/gfortran gfortran /usr/bin/gfortran-8 20
-
-# Add FLUKA to path and set up necessary envionment variables
-if ! grep --quiet "PATH=\$PATH:/usr/local/fluka/bin/" ~/.bashrc; then
-    echo "Adding /usr/local/fluka to PATH"
-
-    echo "# Add FLUKA's bin to PATH" >> ~/.bashrc
-    echo "export PATH=\$PATH:/usr/local/fluka/bin/" >> ~/.bashrc
+# Set up necessary envionment variables
+if ! grep --quiet "export DISPLAY=" ~/.bashrc; then
+    echo "Setting up DISPLAY environmental variable"
+    
     echo "" >> ~/.bashrc
-
-    echo "Setting up environmental variables"
-
     echo "# Set DISPLAY environment variable for the X server" >> ~/.bashrc
     echo "export DISPLAY=10.0.2.2:0" >> ~/.bashrc
-    echo "export XMING=True" >> ~/.bashrc
 fi
 
 echo "Install complete"
