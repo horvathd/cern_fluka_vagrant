@@ -91,16 +91,16 @@ The shared folder on Windows won't be deleted.
 
 Run the *setup_vagrant_ubuntu-18.04.sh* script available at `/fluka` in the virtual machine:
 
-> `sudo ./setup_wsl_ubuntu-18.04.sh`
+> `sudo ./setup_vagrant_ubuntu-18.04.sh`
 
-The script will install the necessary packages, configure *gfortran 8*, and install Flair. After the installation
+The script will install the necessary packages, configure *gfortran 7*, and install Flair. After the installation
 finished, restart *Ubuntu*.
 
 ### 3.2. Downloading and installing FLUKA
 
-Download the GNU/Linux *\*gfor9.tgz* package of FLUKA from [fluka.cern](https://fluka.cern/download/latest-fluka-release).
+Download the GNU/Linux *\*gfor7_amd64.deb* package of FLUKA from [fluka.cern](https://fluka.cern/download/latest-fluka-release).
 
-The steps of the installation can be found [here](https://fluka.cern/documentation/installation/fluka-linux-macos).
+The steps of the installation can be found [here](https://fluka.cern/documentation/installation/fluka-linux-rpm-deb).
 
 ### 3.3. Running FLUKA and Flair
 
