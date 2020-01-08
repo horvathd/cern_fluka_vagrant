@@ -3,7 +3,7 @@
 It is recommended to use the Windows Subsystem for Linux (WSL) for running CERN's FLUKA and Flair on Windows 10.
 However if you are using an Windows 7, 8 or an older build of Windows 10, WSL is not available to you.
 In that case you can use a virtual machine to run FLUKA.
-Vagrant allow the easy configuration and management of a VirtualBox virtual machine.
+Vagrant allows easy configuration and management of a VirtualBox virtual machine.
 
 ## 1. Required software
 
