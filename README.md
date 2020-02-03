@@ -11,6 +11,12 @@ Vagrant allows easy configuration and management of a VirtualBox virtual machine
 
 Download Vagrant from [vagrantup.com](https://www.vagrantup.com/) and install it. After the installation restart Windows.
 
+### 1.1.1. Install Guest Addtion Plugin for Vagrant
+
+Run the following command in a command prompt to install the Guest Addtion Plugin for Vagrant:
+
+> `vagrant plugin install vagrant-vbguest`
+
 ### 1.2. VirtualBox
 
 Download VirtualBox from [virtualbox.org](https://www.virtualbox.org/wiki/Download_Old_Builds_6_0) and install it. Vagrant currently doesn't support version 6.1.
@@ -85,37 +91,6 @@ In case you don't need the virtual machine any more, or you want to restart from
 
 The shared folder on Windows won't be deleted.
 
-## 3. Installing FLUKA and Flair
+## 3. Installing, running, and updating FLUKA and Flair
 
-### 3.1. Setting up Ubuntu for FLUKA and installing Flair
-
-Run the *setup_vagrant_ubuntu-18.04.sh* script available at `/fluka` in the virtual machine:
-
-> `sudo ./setup_vagrant_ubuntu-18.04.sh`
-
-The script will install the necessary packages, configure *gfortran 7*, and install Flair. After the installation
-finished, restart *Ubuntu*.
-
-### 3.2. Downloading and installing FLUKA
-
-Download the GNU/Linux *\*gfor7_amd64.deb* package of FLUKA from [fluka.cern](https://fluka.cern/download/latest-fluka-release).
-
-The steps of the installation can be found [here](https://fluka.cern/documentation/installation/fluka-linux-rpm-deb).
-
-### 3.3. Running FLUKA and Flair
-
-See the instructions on [fluka.cern](https://fluka.cern/documentation/running)
-
-## 4. Updating FLUKA and Flair
-
-### 4.1. Update Flair
-
-To update Flair (and *Ubuntu* as well) run the following commands:
-
-> `sudo apt-get update`
-
-> `sudo apt-get upgrade`
-
-### 4.2. Update FLUKA
-
-Manually install the latest package of FLUKA.
+Use the instructions starting from the 2nd section of the README of https://github.com/horvathd/cern_fluka_wsl
