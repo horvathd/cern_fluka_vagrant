@@ -19,7 +19,7 @@ Run the following command in a command prompt to install the Guest Addtion Plugi
 
 ### 1.2. VirtualBox
 
-Download VirtualBox from [virtualbox.org](https://www.virtualbox.org/wiki/Download_Old_Builds_6_0) and install it. Vagrant currently doesn't support version 6.1.
+Download VirtualBox from [virtualbox.org](https://www.virtualbox.org) and install it.
 
 ### 1.2. Install Xming
 
