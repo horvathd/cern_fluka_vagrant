@@ -21,7 +21,7 @@ Run the following command in a command prompt to install the Guest Addtion Plugi
 
 Download VirtualBox from [virtualbox.org](https://www.virtualbox.org) and install it.
 
-### 1.2. Install Xming
+### 1.3. Xming
 
 Xming X Server for Windows is necessary to visualize the Flair's graphical interface.
 
