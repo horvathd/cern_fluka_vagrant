@@ -4,6 +4,8 @@ Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/bionic64"
   config.vm.box_check_update = false
   config.vm.hostname = "fluka"
+  
+  config.vbguest.auto_update = false
 
   config.vm.synced_folder ".", "/vagrant", disabled: true
   config.vm.synced_folder "./Fluka", "/fluka"
@@ -21,6 +23,7 @@ Vagrant.configure("2") do |config|
   end
 
   config.vm.provision "shell", inline: <<-SHELL
+    echo 'libc6 libraries/restart-without-asking boolean true' | sudo debconf-set-selections
     echo "export DISPLAY=10.0.2.2:0" > /etc/profile.d/vagrant.sh
   SHELL
 end
