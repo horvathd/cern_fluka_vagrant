@@ -47,9 +47,13 @@ Simply use the
 command. The first time you run, vagrant will download and configure the base for the virtual machine, which could take some time.
 Later the start should take around 20 seconds only.
 
+If there is an error with the shared folder due to the missing *VirtualBox Guest Additions*, run the following command:
+
+> `vagrant provision && vagrant vbguest && vagrant reload`
+
 ### 2.4. Start Xming
 
-Start the *XMing* app from the *Start Menu*.
+Start the *Xming* app from the *Start Menu*.
 
 ### 2.5. Connect to the virtual machine
 
