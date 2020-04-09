@@ -69,7 +69,7 @@ prompt, the virtual machine is ready to use.
 
 ### 2.6. Shared folder
 
-In the Windows machine The *FLUKA* folder next to the *Vagrantfile* is automatically shared with the virtual machine at `/fluka` directory.
+In the Windows machine the *FLUKA* folder next to the *Vagrantfile* is automatically shared with the virtual machine at `/fluka` directory.
 
 ### 2.7. Log out fron the virtual machine
 
