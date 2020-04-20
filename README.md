@@ -97,4 +97,4 @@ The shared folder on Windows won't be deleted.
 
 ## 3. Installing, running, and updating FLUKA and Flair
 
-Use the instructions starting from **Point 6** at https://fluka.cern/documentation/installation/fluka-flair-windows10-wsl 
+Use the instructions starting from **Point 2** at https://fluka.cern/documentation/installation/fluka-flair-windows10-wsl 
