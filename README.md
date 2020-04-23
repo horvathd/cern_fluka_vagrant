@@ -95,6 +95,6 @@ In case you don't need the virtual machine any more, or you want to restart from
 
 The shared folder on Windows won't be deleted.
 
-## 3. Installing, running, and updating FLUKA and Flair
+## 3. Installing and updating FLUKA and Flair
 
-Use the instructions from **Point 2** at https://github.com/horvathd/cern_fluka_wsl
+Use the instructions at **Section 2. and 4.** from https://github.com/horvathd/cern_fluka_wsl
